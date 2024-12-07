@@ -39,8 +39,18 @@ header div.div2 ul{
     padding-left: 400px;
     padding-top: 10px ;
 }
+header div.div2 ul li a:hover{
+    color: rgb(224, 219, 219);
+}
+
 header div.div2 ul div.C1 li {
     border-left: solid  rgb(211, 207, 207) 1px;
+}
+header div.div2 ul div.C2 li a{
+    transition: transform 0.3s ease;
+}
+header div.div2 ul div.C2 li a:hover{
+    transform: scale(1.2);
 }
 header div.div2 ul li a{
     text-decoration: none;
@@ -92,10 +102,35 @@ section.section2 div.main1 div.div2{
     display: flex;
 } 
 
-section.section2 div.main1 div.div2{
-    padding-left: 60px ;
-    display: flex;
-} 
+section.section2 div.main1 div.div2 ul li{
+    position: relative; 
+    display: inline-block;
+}
+section.section2 div.main1 div.div2 ul li ul.sousmenu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f0f0f0cb;
+        padding: 10px;
+        border: 1px solid #ccc;
+        list-style-type: none;
+      }
+
+      section.section2 div.main1 div.div2 ul li a:hover ul.sousmenu{
+        display: block;
+      }
+      section.section2 div.main1 div.div2 ul li ul.sousmenu li{
+            padding-bottom: 5px;
+      }
+      section.section2 div.main1 div.div2 ul li ul.sousmenu li a{
+        text-decoration: none;
+        color: black;
+      }
+      section.section2 div.main1 div.div2 ul li ul.sousmenu li a:hover{
+        color:  rgb(19, 94, 242);
+      }
+
 
 section.section2 div.main1 div.div2 ul{
     list-style-type: none;
@@ -112,6 +147,9 @@ section.section2 div.main1 div.div2 ul li a{
     ;
     padding-right: 10px;
 } 
+section.section2 div.main1 div.div2 ul li a:hover{
+    color: rgb(19, 94, 242);
+}
 
 section.section2 div.main1 div.div2 ul li a span{
     font-size: 9.5px;
@@ -296,8 +334,26 @@ section.section3 footer div.footer2  div.div2 ul li.titre3{
     font-size: 22px;
     padding-bottom: 20px;
 }
+section.section3 footer div.footer2  div.div2 ul div.choix{
+     background-color: rgb(14, 86, 230);
+     border-radius: 10px;
+}
+section.section3 footer div.footer2  div.div2 ul p{
+    font-size: 22px;
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
 section.section3 footer div.footer2  div.div2 ul li {
     padding-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+section.section3 footer div.footer2  div.div2 ul li:hover{
+    background-color: whitesmoke;
+    
+} 
+section.section3 footer div.footer2  div.div2 ul li:hover a{
+    color: black;
 }
 section.section3 footer div.footer2  div.div2 ul li a{
     color:whitesmoke;
@@ -306,12 +362,10 @@ section.section3 footer div.footer2  div.div2 ul li a{
 }
 section.section3 footer div.footer2  div.div2 ul li a span{
     padding-bottom: 30px;
+    padding-left: 20px;
   
 } 
-section.section3 footer div.footer2  div.div2 ul li a span{
-    padding-bottom: 30px;
-  
-} 
+
 
 section.section3 footer div.footer3{
     padding-left: 780px;
@@ -320,17 +374,53 @@ section.section3 footer div.footer3{
 } 
 section.section3 footer div.footer3 div.div1 ul{
     list-style-type: none;
-    
+    display: flex;
+    padding-bottom: 20px;
 }
-section.section3 footer div.footer3 div.div1 ul li.titre4{
-    color:whitesmoke;
-    padding-bottom: none;
+section.section3 footer div.footer3 div.div1  p{
+    color: whitesmoke;
     font-size: 22px;
-} 
+    padding-bottom: 20px;
+}
+section.section3 footer div.footer3 div.div1 ul li{
+    padding-right: 10px;
+}
+section.section3 footer div.footer3 div.div1 ul div.youtube{
+    background-color: red;
+    border-radius: 2rem;
+    margin-right: 10px;
+    padding-left: 10px;
+    height: 20px;
+    padding-top: 8px;
+}
+section.section3 footer div.footer3 div.div1 ul div.facebook{
+    background-color: rgb(47, 46, 78);
+    border-radius: 2rem;
+    margin-right: 15px;
+    padding-left: 10px;
+    height: 20px;
+    padding-top: 8px;
+}
+section.section3 footer div.footer3 div.div1 ul div.sap{
+    background-color: rgb(23, 192, 23);
+    border-radius: 2rem;
+    margin-right: 10px;
+    padding-left: 10px;
+    height: 20px;
+    padding-top: 8px;
+}
+section.section3 footer div.footer3 div.div1 ul div.insta{
+    background-color: rgb(255, 0, 157);
+    border-radius: 2rem;
+    margin-right: 10px;
+    padding-left: 10px;
+    height: 20px;
+    padding-top: 8px;
+}
 section.section3 footer div.footer3 div.div1 ul li a{
     color:whitesmoke;
    text-decoration: none;
-   display: flex;
+   padding-bottom: 10px;
 
 } 
 section.section3 footer div.footer3 div.div1 ul li a i{
@@ -354,27 +444,54 @@ section.section3 footer div.footer3 div.div3 img{
    width: 220px;
 
 } 
+section.section3 footer div.footer3 div.div4{
+    background-color: whitesmoke;
+    width: 100px;
+    height: 30px;
+    margin-left: 280px;
+    padding-right: 50px;
+    padding-left: 70px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+
+}
+section.section3 footer div.footer3 div.div4 a{
+        text-decoration: none;
+        color: black;
+       
+}
+section.section3 footer div.footer3 div.div4:hover{
+    transform: scale(0.8);
+}
+
 
 
 
 
  div.divfin{
     background-color: none;
-    padding-bottom: 10px;
     padding-top: 10px;
 } 
-div.divfin span.spanfin1{
-    padding-top: 50px;
+div.divfin span.spanfin1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
   
 } 
+div.divfin span.spanfin2{
+    font-size: 10px;
+    font-weight: 5px;
+}
 div.divfin ul{
     display: flex;
     list-style-type: none;
     padding-left: 1000px;
 
 }
-div.divfin ul li{
-    
+div.divfin ul li a{
+     
 }
 
 
